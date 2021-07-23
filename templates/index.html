@@ -1,0 +1,62 @@
+ 
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Python Flask Multiple Select option using Bootstrap Select Plugin and Jquery Ajax Mysqli database</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+ </head>
+ <body>
+  <br /><br />
+  
+{% extends "layout.html" %}
+{% block content %}
+
+		<h1>About app</h1>
+        <p>This is a machine learning estimator using time series auto regression model for estimating the population of a country or regions in a chosen time period.</p>
+
+
+ <div class="container">
+  
+   <div class="col-md-4" style="text-align: center">
+    <form action="{{ url_for('test') }}" method="post" id="multiple_select_form" >
+	<br />
+	      <p> Please select Region, subregion, country or area </p>
+     
+	 <select name="countries" id="countries" class="form-control selectpicker" data-live-search="true" multiple data-actions-box="true" multiple data-selected-text-format="count">
+		 <!-- <option value="Python Flask">6000000</option>
+		  <option value="Python Django">15</option>
+		  <option value="Express.js">2025</option>  -->
+		  
+		  {% for o in data %}  
+			<option value="{{ o }}">{{ o }}</option>
+		  {% endfor %}
+	 </select> 
+		 <br /><br />
+		 
+	
+		
+	
+		  <p align="left">and enter time period  (for example 2030 to 2050)</p>
+		  
+		  
+			 <input type="text" name="from" placeholder="from" required="required" /><br>
+			 
+			 <input type="text" name="to" placeholder="to" required="required" /><br>
+	     
+	 
+	 <br />
+	 
+        
+	 <button type="submit" class="btn btn-primary btn-block">Estimate</button>
+    </form>
+    <br />
+   </div>
+   {{estilationnnn}}
+  </div>
+{% endblock %}
+</body>
+</html>
