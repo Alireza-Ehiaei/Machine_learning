@@ -1,8 +1,5 @@
 alabaster==0.7.12
 alembic==1.6.5
-anaconda-client==1.7.2
-anaconda-navigator==1.10.0
-anaconda-project==0.8.3
 argh==0.26.2
 argon2-cffi @ file:///C:/ci/argon2-cffi_1596828585465/work
 asn1crypto @ file:///tmp/build/80754af9/asn1crypto_1596577642040/work
@@ -73,7 +70,7 @@ gunicorn==20.0.4
 h5py==2.10.0
 HeapDict==1.0.1
 html5lib @ file:///tmp/build/80754af9/html5lib_1593446221756/work
-idna @ file:///tmp/build/80754af9/idna_1593446292537/work
+idna
 imageio @ file:///tmp/build/80754af9/imageio_1594161405741/work
 imagesize==1.2.0
 importlib-metadata @ file:///tmp/build/80754af9/importlib-metadata_1602276842396/work
