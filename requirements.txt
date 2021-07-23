@@ -1,5 +1,5 @@
 pandas
 numpy
 flask
-json
+json5==0.9.5
 gunicorn
